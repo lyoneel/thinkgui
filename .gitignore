@@ -25,3 +25,7 @@ aur/src
 aur/thinkgui
 aur/thinkgui-*.xz
 aur/thinkgui-*.gz
+
+# Custom, those temp files appeared after build
+.tmp
+.qmake.stash
