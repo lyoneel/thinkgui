@@ -19,90 +19,141 @@
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
-    <widget class="QGroupBox" name="cpuGroupBox">
-     <property name="title">
-      <string>CPU</string>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout_2">
-      <item>
-       <widget class="QWidget" name="widget" native="true">
-        <layout class="QHBoxLayout" name="horizontalLayout">
-         <property name="topMargin">
-          <number>0</number>
-         </property>
-         <property name="bottomMargin">
-          <number>9</number>
-         </property>
+     <widget class="QWidget" name="tabCpu">
+      <attribute name="title">
+       <string>CPUs</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
          <item>
-          <widget class="QLabel" name="setAllLabel">
-           <property name="text">
-            <string>Set all to:</string>
+          <widget class="QGroupBox" name="cpuGroupBox">
+           <property name="title">
+            <string>CPU</string>
            </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="conservativeButton">
-           <property name="text">
-            <string>conservative</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="ondemandButton">
-           <property name="text">
-            <string>ondemand</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="performanceButton">
-           <property name="text">
-            <string>performance</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="powersaveButton">
-           <property name="text">
-            <string>powersave</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="userspaceButton">
-           <property name="text">
-            <string>userspace</string>
-           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QWidget" name="widget" native="true">
+              <layout class="QHBoxLayout" name="horizontalLayout">
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>9</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="setAllLabel">
+                 <property name="text">
+                  <string>Set all to:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="conservativeButton">
+                 <property name="text">
+                  <string>conservative</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="ondemandButton">
+                 <property name="text">
+                  <string>ondemand</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="performanceButton">
+                 <property name="text">
+                  <string>performance</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="powersaveButton">
+                 <property name="text">
+                  <string>powersave</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="userspaceButton">
+                 <property name="text">
+                  <string>userspace</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
           </widget>
          </item>
         </layout>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-   </item>
-   <item>
-    <widget class="QGroupBox" name="sensorsGroupBox">
-     <property name="title">
-      <string>Sensors</string>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout_3"/>
-    </widget>
-   </item>
-   <item>
-    <widget class="QGroupBox" name="fansGroupBox">
-     <property name="title">
-      <string>Fans</string>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout_4"/>
-    </widget>
-   </item>
-   <item>
-    <widget class="QGroupBox" name="batteryGroupBox">
-     <property name="title">
-      <string>Battery</string>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout_5"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabSens">
+      <attribute name="title">
+       <string>Sensors</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_7">
+         <item>
+          <widget class="QGroupBox" name="sensorsGroupBox">
+           <property name="title">
+            <string>Sensors</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_3"/>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabFans">
+      <attribute name="title">
+       <string>Fans</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_9">
+         <item>
+          <widget class="QGroupBox" name="fansGroupBox">
+           <property name="title">
+            <string>Fans</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_4"/>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabBatt">
+      <attribute name="title">
+       <string>Battery</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_8">
+         <item>
+          <widget class="QGroupBox" name="batteryGroupBox">
+           <property name="title">
+            <string>Battery</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_5"/>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
     </widget>
    </item>
   </layout>
